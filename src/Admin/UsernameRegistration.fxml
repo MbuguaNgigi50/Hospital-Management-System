@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Username">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="197.0" layoutY="-1.0" prefHeight="473.0" prefWidth="555.0">
+                           <children>
+                              <TableView fx:id="usernameRegistrationTable" prefHeight="473.0" prefWidth="559.0">
+                                 <columns>
+                                    <TableColumn fx:id="usernameRegistrationColumn" prefWidth="186.0" text="USERNAME" />
+                                    <TableColumn fx:id="passwordRegistrationColumn" prefWidth="186.0" text="PASSWORD" />
+                                    <TableColumn fx:id="divisionRegistrationColumn" prefWidth="186.0" text="DIVISION"/>
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="-2.0" layoutY="1.0" prefHeight="471.0" prefWidth="196.0">
+                           <children>
+                              <TextField fx:id="usernameUsername" promptText="USERNAME" />
+                              <TextField fx:id="usernamePassword" promptText="PASSWORD" />
+                              <TextField fx:id="usernameDivision" promptText="DIVISION"/>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="197.0" onAction="#addUsernameData" text="ADD" />
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="197.0" onAction="#clearUsernameData" text="CLEAR" />
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="197.0" onAction="#loadUsernameData" text="LOAD" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+    <children>
+        <TabPane prefHeight="500.0" prefWidth="1050.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Doctors">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <HBox layoutX="197.0" layoutY="-1.0" prefHeight="473.0" prefWidth="1056.0">
+                                    <children>
+                                        <TableView fx:id="staffRegistrationTable" prefHeight="473.0" prefWidth="1069.0">
+                                            <columns>
+                                                <TableColumn fx:id="staffRegistrationIDColumn" prefWidth="75.0" text="ID" />
+                                                <TableColumn fx:id="staffRegistrationFirstNameColumn" prefWidth="108.0" text="FIRST NAME" />
+                                                <TableColumn fx:id="staffRegistrationLastNameColumn" prefWidth="115.0" text="LAST NAME" />
+                                                <TableColumn fx:id="staffRegistrationNIDColumn" prefWidth="109.0" text="NATIONAL ID" />
+                                                <TableColumn fx:id="staffRegistrationResidenceColumn" prefWidth="109.0" text="RESIDENCE" />
+                                                <TableColumn fx:id="staffRegistrationDateOfBirthColumn" prefWidth="141.0" text="DATE OF BIRTH" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                                </HBox>
+                                <VBox layoutX="-2.0" layoutY="1.0" prefHeight="471.0" prefWidth="196.0">
+                                    <children>
+                                        <TextField fx:id="staffID" promptText="ID" />
+                                        <TextField fx:id="staffFirstName" promptText="FIRST NAME" />
+                                        <TextField fx:id="staffLastName" promptText="LAST NAME" />
+                                        <TextField fx:id="staffNID" promptText="National ID" />
+                                        <TextField fx:id="staffResidence" promptText="RESIDENCE" />
+                                        <DatePicker fx:id="staffDOB" prefHeight="25.0" prefWidth="199.0" />
+                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="197.0" onAction="#addStaffData"  text="ADD" />
+                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="197.0" onAction="#clearStaffData" text="CLEAR" />
+                                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="197.0" onAction="#loadStaffData" text="LOAD" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
