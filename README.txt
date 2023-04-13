@@ -15,21 +15,6 @@ JavaFX scenebuilder (https://www.oracle.com/java/technologies/javase/javafxscene
 
 ******End of Requirements*******
 
-
-******Credentials For Test Data********
-
-1)
-Username: Mbazita
-Password: mbazita
-Division: Admin
-
-2)
-Username: Chiga
-Password: chiga
-Division: Doctor
-
-******End of Credentials For Test Data********
-
 ******Database Used******
 SQLite
 
